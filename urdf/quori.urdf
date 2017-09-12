@@ -25,7 +25,7 @@
     <visual>
       <origin rpy="0 0 -1.57079632679" xyz="0.02 0 -0.2007174"/>
       <geometry>
-        <mesh filename="package://quori_description/meshes/170911_Lower Torso.dae"/>
+        <mesh filename="package://quori_description/meshes/Lower Torso.dae"/>
       </geometry>
     </visual>
   </link>
@@ -42,7 +42,7 @@
     <visual>
       <origin rpy="0 0 -1.57079632679" xyz="0.02 0 -0.5476974"/>
       <geometry>
-        <mesh filename="package://quori_description/meshes/170911_Upper Torso.dae"/>
+        <mesh filename="package://quori_description/meshes/Upper Torso.dae"/>
       </geometry>
     </visual>
   </link>
@@ -70,7 +70,7 @@
     <visual>
       <origin rpy="0 0 -1.57079632679" xyz="0.005 0.1625 -0.978"/>
       <geometry>
-        <mesh filename="package://quori_description/meshes/170911_Right Arm.dae"/>
+        <mesh filename="package://quori_description/meshes/Right Arm.dae"/>
       </geometry>
     </visual>
   </link>
@@ -99,7 +99,7 @@
     <visual>
       <origin rpy="0 0 -1.57079632679" xyz="0.005 -0.166 -0.978"/>
       <geometry>
-        <mesh filename="package://quori_description/meshes/170911_Left Arm.dae"/>
+        <mesh filename="package://quori_description/meshes/Left Arm.dae"/>
       </geometry>
     </visual>
   </link>
