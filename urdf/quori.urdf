@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<robot name="quori">
+
+<material name="blue">
+    <color rgba="0 0 0.8 1"/>
+  </material>
+  <material name="black">
+    <color rgba="0 0 0 1"/>
+  </material>
+  <material name="white">
+    <color rgba="1 1 1 1"/>
+  </material>
+
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0.1013587" rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.2027174" radius="0.2413"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+  </link>
+
+   <link name="lower_torso">
+    <visual>
+      <origin rpy="0 0 -1.57079632679" xyz="0.02 0 -0.2007174"/>
+      <geometry>
+        <mesh filename="package://quori_description/meshes/170911_Lower Torso.dae"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="turret_joint" type="revolute">
+    <origin xyz="0 0 0.2027174" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="lower_torso"/>
+    <axis xyz="0 0 1" />
+    <limit lower="-3.14" upper="3.14" effort="1" velocity="3"/>
+  </joint>
+
+   <link name="upper_torso">
+    <visual>
+      <origin rpy="0 0 -1.57079632679" xyz="0.02 0 -0.5476974"/>
+      <geometry>
+        <mesh filename="package://quori_description/meshes/170911_Upper Torso.dae"/>
+      </geometry>
+    </visual>
+  </link>
+
+   <joint name="waist_hinge" type="revolute">
+    <origin xyz="0 0 0.34798" rpy="0 0 0"/>
+    <parent link="lower_torso"/>
+    <child link="upper_torso"/>
+    <axis xyz="0 1 0" />
+    <limit lower="-0.26" upper="0.52" effort="1" velocity="3"/>
+  </joint>
+
+  <link name="right_arm_base">
+  </link>
+
+  <joint name="right_arm_r1" type="revolute">
+    <origin xyz="0.015 -0.16403066 0.43021758" rpy="0 0 0"/>
+    <parent link="upper_torso"/>
+    <child link="right_arm_base"/>
+    <axis xyz="0 1 0" />
+    <limit lower="-3.14" upper="3.14" effort="1" velocity="3"/>
+  </joint>
+
+  <link name="right_arm_upper">
+    <visual>
+      <origin rpy="0 0 -1.57079632679" xyz="0.005 0.1625 -0.978"/>
+      <geometry>
+        <mesh filename="package://quori_description/meshes/170911_Right Arm.dae"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="right_arm_r2" type="revolute">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="right_arm_base"/>
+    <child link="right_arm_upper"/>
+    <axis xyz="1 0 0" />
+    <limit lower="-1.1" upper="1.1" effort="1" velocity="3"/>
+  </joint>
+
+
+  <link name="left_arm_base">
+  </link>
+
+  <joint name="left_arm_r1" type="revolute">
+    <origin xyz="0.015 0.16403066 0.43021758" rpy="0 0 0"/>
+    <parent link="upper_torso"/>
+    <child link="left_arm_base"/>
+    <axis xyz="0 1 0" />
+    <limit lower="-3.14" upper="3.14" effort="1" velocity="3"/>
+  </joint>
+
+  <link name="left_arm_upper">
+    <visual>
+      <origin rpy="0 0 -1.57079632679" xyz="0.005 -0.166 -0.978"/>
+      <geometry>
+        <mesh filename="package://quori_description/meshes/170911_Left Arm.dae"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="left_arm_r2" type="revolute">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="left_arm_base"/>
+    <child link="left_arm_upper"/>
+    <axis xyz="1 0 0" />
+    <limit lower="-1.1" upper="1.1" effort="1" velocity="3"/>
+  </joint>
+</robot>
