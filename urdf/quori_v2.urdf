@@ -42,7 +42,7 @@
     <visual>
       <origin rpy="0 0 -1.57079632679" xyz="0.02 0 -0.5476974"/>
       <geometry>
-        <mesh filename="package://quori_description/meshes/0917_Upper Torso+Waist.dae"/>
+        <mesh filename="package://quori_description/meshes/181010_Upper Torso Vented.dae"/>
       </geometry>
     </visual>
   </link>
