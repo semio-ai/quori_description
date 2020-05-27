@@ -15,8 +15,6 @@ Approximate velocity limites are set in the urdf. The two joints, left_arm_lower
 ### 1 Getting started
 
 Clone and built this repo.
-After a sucessful cakin_make continue to install the remaining packages
-
 
 ### 2 Microphone Array
 The following package is used to interface with the ReSpeaker 2.0 microphone array
