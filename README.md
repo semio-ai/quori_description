@@ -28,9 +28,12 @@ The following package is used to interface with the sensor.
 http://wiki.ros.org/astra_camera
 http://shop.orbbec3d.com/Astra-Mini_p_40.html
 http://shop.orbbec3d.com/DuriPOD_p_47.html
+
 *FOV:* 60°H x 49.5°V x 73°D
 *Range:* 0.6m – 5m
-The offset horization positoin of the RGB and depth FoV are not set in this urdf. This information is expected to be provided seperately. The joint origin for the camera "head_Camera_joint" is simply at the center of the camera case.
+
+
+The offset horization position of the RGB and depth FoV are not set in this urdf. This information is expected to be provided seperately. The joint origin for the camera "head_Camera_joint" is simply at the center of the camera case.
 
 ### 4 Laser Scanner
 The base laser scanner is the RPLidar a1. The following package is used to interface with the sensor.
