@@ -41,5 +41,6 @@ The base laser scanner is the RPLidar a1. The following package is used to inter
 https://github.com/Slamtec/rplidar_ros.git
 To account for the FoV shadows of internal obsticles in the robot a laser filter should be used. The following image shows the approximate FoV coverage for the sensor.
 https://github.com/ros-perception/laser_filters.git
+<center>
 <img src="images/laserFoV.png" width="200">
-
+</center>
