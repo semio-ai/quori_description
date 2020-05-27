@@ -19,8 +19,6 @@ After a sucessful cakin_make continue to install the remaining packages
 
 
 ### 2 Microphone Array
- respeaker_ros
-=============
 The following package is used to interface with the ReSpeaker 2.0 microphone array
 https://github.com/furushchev/respeaker_ros.git
 More intformation about the ReSpeaker can be found at https://wiki.seeedstudio.com/ReSpeaker_Mic_Array_v2.0/
